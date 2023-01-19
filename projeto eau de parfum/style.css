@@ -1,0 +1,21 @@
+@import url(https://fonts.google.com/specimen/Montserrat);
+@import url(https://fonts.google.com/specimen/Fraunces);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#um {
+    background-color: aquamarine;
+}
+
+#dois {
+    background-color: black;
+}
