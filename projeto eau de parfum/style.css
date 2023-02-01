@@ -1,32 +1,119 @@
-@import url(https://fonts.google.com/specimen/Montserrat);
-@import url(https://fonts.google.com/specimen/Fraunces);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
 }
 
-body {
-    background-color: #f2f2f2;
-    display: flex;   
-    min-height: 100vh;
+main {
+    background-color: hsl(30, 38%, 92%);
+}  
+
+.container {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;  
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 #content {
-    width: 500px;
-    height: 500px;
+    background-color: hsl(0, 0%, 100%);
+    width: 300px;
+    height: 450px;
+    border-radius: 0px 10px 10px 0px;
 }
 
-img {
-    width: 50%;
-    height: 50%;
+.img {
+    width: 300px;
 }
 
 button {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    width: 230px;
+    height: 50px;
+    border-radius: 7px;
     color: white;
-    background-color: rgb(0, 99, 61) ;
-    
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    margin: 35px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 99, 61);
+}
+
+button img {
+    padding-right: 10px;
+}
+
+.img img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#perfume {
+    padding: 20px 0 0 20px;
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 0.9em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    font-weight: 700px;
+
+}
+
+h1 {
+    padding: 15px 70px 20px 20px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: bolder;
+}
+
+p {
+    padding: 0 20px 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+span {
+    padding-left: 20px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+}
+
+#price {
+    margin-bottom: 30px;
+    font-size: 0.9em;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+@media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+
+    #content {
+        margin-bottom: 15px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .img {
+        margin: 15px 0 0 0;
+        height: 300px;
+    }
+
+    .img img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
 }
